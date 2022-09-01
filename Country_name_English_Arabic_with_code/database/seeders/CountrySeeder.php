@@ -14,410 +14,255 @@ class CountrySeeder extends Seeder
      */
     public function run()
     {
-        // $countries = [
-
-        //     ['arabic' => 'أفغانستان'],
-        //     ['arabic' => 'ألبانيا'],
-        //     ['arabic' => 'الجزائر'],
-        //     ['arabic' => 'أندورا'],
-        //     ['arabic' => 'أنغولا'],
-        //     ['arabic' => 'أنتيغوا وبربودا'],
-        //     ['arabic' => 'الأرجنتين'],
-        //     ['arabic' => 'أرمينيا'],
-        //     ['arabic' => 'أستراليا'],
-        //     ['arabic' => 'النمسا'],
-        //     ['arabic' => 'أذربيجان'],
-        //     ['arabic' => 'جزر البهاما'],
-        //     ['arabic' => 'البحرين'],
-        //     ['arabic' => 'بنغلاديش'],
-        //     ['arabic' => 'بربادوس'],
-        //     ['arabic' => 'بيلاروس'],
-        //     ['arabic' => 'بلجيكا'],
-        //     ['arabic' => 'بليز'],
-        //     ['arabic' => 'بنن'],
-        //     ['arabic' => 'بوتان'],
-        //     ['arabic' => 'بوليفيا (دولة - المتعددة القوميات)'],
-        //     ['arabic' => 'البوسنة والهرسك'],
-        //     ['arabic' => 'بوتسوانا'],
-        //     ['arabic' => 'البرازيل'],
-        //     ['arabic' => 'بروني دار السلام'],
-        //     ['arabic' => 'بلغاريا'],
-        //     ['arabic' => 'بوركينا فاسو'],
-        //     ['arabic' => 'بوروندي'],
-        //     ['arabic' => 'كابو فيردي'],
-        //     ['arabic' => 'كمبوديا'],
-        //     ['arabic' => 'الكاميرون'],
-        //     ['arabic' => 'كندا'],
-        //     ['arabic' => 'جمهورية أفريقيا الوسطى'],
-        //     ['arabic' => 'تشاد'],
-        //     ['arabic' => 'شيلي'],
-        //     ['arabic' => 'الصين'],
-        //     ['arabic' => 'كولومبيا'],
-        //     ['arabic' => 'جزر القمر'],
-        //     ['arabic' => 'الكونغو'],
-        //     ['arabic' => 'كوستاريكا'],
-        //     ['arabic' => 'كوت ديفوار'],
-        //     ['arabic' => 'كرواتيا'],
-        //     ['arabic' => 'كوبا'],
-        //     ['arabic' => 'قبرص'],
-        //     ['arabic' => 'تشيكيا'],
-        //     ['arabic' => 'جمهورية كوريا الشعبية الديمقراطية'],
-        //     ['arabic' => 'جمهورية الكونغو الديمقراطية'],
-        //     ['arabic' => 'الدانمرك'],
-        //     ['arabic' => 'جيبوتي'],
-        //     ['arabic' => 'دومينيكا'],
-        //     ['arabic' => 'الجمهورية الدومينيكية'],
-        //     ['arabic' => 'إكوادور'],
-        //     ['arabic' => 'مصر'],
-        //     ['arabic' => 'السلفادور'],
-        //     ['arabic' => 'غينيا الاستوائية'],
-        //     ['arabic' => 'إريتريا'],
-        //     ['arabic' => 'إستونيا'],
-        //     ['arabic' => 'إسواتيني'],
-        //     ['arabic' => 'إثيوبيا'],
-        //     ['arabic' => 'فيجي'],
-        //     ['arabic' => 'فنلندا'],
-        //     ['arabic' => 'فرنسا'],
-        //     ['arabic' => 'غابون'],
-        //     ['arabic' => 'غامبيا'],
-        //     ['arabic' => 'جورجيا'],
-        //     ['arabic' => 'ألمانيا'],
-        //     ['arabic' => 'غانا'],
-        //     ['arabic' => 'اليونان'],
-        //     ['arabic' => 'غرينادا'],
-        //     ['arabic' => 'غواتيمالا'],
-        //     ['arabic' => 'غينيا'],
-        //     ['arabic' => 'غينيا - بيساو'],
-        //     ['arabic' => 'غيانا'],
-        //     ['arabic' => 'هايتي'],
-        //     ['arabic' => 'هندوراس'],
-        //     ['arabic' => 'هنغاريا'],
-        //     ['arabic' => 'آيسلندا'],
-        //     ['arabic' => 'الهند'],
-        //     ['arabic' => 'إندونيسيا'],
-        //     ['arabic' => 'إيران (جمهورية - الإسلامية)'],
-        //     ['arabic' => 'العراق'],
-        //     ['arabic' => 'أيرلندا'],
-        //     ['arabic' => 'إسرائيل'],
-        //     ['arabic' => 'إيطاليا'],
-        //     ['arabic' => 'جامايكا'],
-        //     ['arabic' => 'اليابان'],
-        //     ['arabic' => 'الأردن'],
-        //     ['arabic' => 'كازاخستان'],
-        //     ['arabic' => 'كينيا'],
-        //     ['arabic' => 'كيريباس'],
-        //     ['arabic' => 'الكويت'],
-        //     ['arabic' => 'قيرغيزستان'],
-        //     ['arabic' => 'جمهورية لاو الديمقراطية الشعبية'],
-        //     ['arabic' => 'لاتفيا'],
-        //     ['arabic' => 'لبنان'],
-        //     ['arabic' => 'ليسوتو'],
-        //     ['arabic' => 'ليبريا'],
-        //     ['arabic' => 'ليبيا'],
-        //     ['arabic' => 'ليختنشتاين'],
-        //     ['arabic' => 'ليتوانيا'],
-        //     ['arabic' => 'لكسمبرغ'],
-        //     ['arabic' => 'مدغشقر'],
-        //     ['arabic' => 'ملاوي'],
-        //     ['arabic' => 'ماليزيا'],
-        //     ['arabic' => 'ملديف'],
-        //     ['arabic' => 'مالي'],
-        //     ['arabic' => 'مالطة'],
-        //     ['arabic' => 'جزر مارشال'],
-        //     ['arabic' => 'موريتانيا'],
-        //     ['arabic' => 'موريشيوس'],
-        //     ['arabic' => 'المكسيك'],
-        //     ['arabic' => 'ميكرونيزيا (ولايات - الموحدة)'],
-        //     ['arabic' => 'موناكو'],
-        //     ['arabic' => 'منغوليا'],
-        //     ['arabic' => 'الجبل الأسود'],
-        //     ['arabic' => 'المغرب'],
-        //     ['arabic' => 'موزامبيق'],
-        //     ['arabic' => 'ميانمار'],
-        //     ['arabic' => 'ناميبيا'],
-        //     ['arabic' => 'ناورو'],
-        //     ['arabic' => 'نيبال'],
-        //     ['arabic' => 'هولندا'],
-        //     ['arabic' => 'نيوزيلندا'],
-        //     ['arabic' => 'نيكاراغوا'],
-        //     ['arabic' => 'النيجر'],
-        //     ['arabic' => 'نيجيريا'],
-        //     ['arabic' => 'مقدونيا الشمالية'],
-        //     ['arabic' => 'النرويج'],
-        //     ['arabic' => 'عمان'],
-        //     ['arabic' => 'باكستان'],
-        //     ['arabic' => 'بالاو'],
-        //     ['arabic' => 'بنما'],
-        //     ['arabic' => 'بابوا غينيا الجديدة'],
-        //     ['arabic' => 'باراغواي'],
-        //     ['arabic' => 'بيرو'],
-        //     ['arabic' => 'الفلبين'],
-        //     ['arabic' => 'بولندا'],
-        //     ['arabic' => 'البرتغال'],
-        //     ['arabic' => 'قطر'],
-        //     ['arabic' => 'جمهورية كوريا'],
-        //     ['arabic' => 'جمهورية مولدوفا'],
-        //     ['arabic' => 'رومانيا'],
-        //     ['arabic' => 'الاتحاد الروسي'],
-        //     ['arabic' => 'رواندا'],
-        //     ['arabic' => 'سانت كيتس ونيفس'],
-        //     ['arabic' => 'سانت لوسيا'],
-        //     ['arabic' => 'سانت فنسنت وجزر غرينادين'],
-        //     ['arabic' => 'ساموا'],
-        //     ['arabic' => 'سان مارينو'],
-        //     ['arabic' => 'سان تومي وبرينسيبي'],
-        //     ['arabic' => 'المملكة العربية السعودية'],
-        //     ['arabic' => 'السنغال'],
-        //     ['arabic' => 'صربيا'],
-        //     ['arabic' => 'سيشيل'],
-        //     ['arabic' => 'سيراليون'],
-        //     ['arabic' => 'سنغافورة'],
-        //     ['arabic' => 'سلوفاكيا'],
-        //     ['arabic' => 'سلوفينيا'],
-        //     ['arabic' => 'جزر سليمان'],
-        //     ['arabic' => 'الصومال'],
-        //     ['arabic' => 'جنوب أفريقيا'],
-        //     ['arabic' => 'جنوب السودان'],
-        //     ['arabic' => 'إسبانيا'],
-        //     ['arabic' => 'سري لانكا'],
-        //     ['arabic' => 'السودان'],
-        //     ['arabic' => 'سورينام'],
-        //     ['arabic' => 'السويد'],
-        //     ['arabic' => 'سويسرا'],
-        //     ['arabic' => 'الجمهورية العربية السورية'],
-        //     ['arabic' => 'طاجيكستان'],
-        //     ['arabic' => 'تايلند'],
-        //     ['arabic' => 'تيمور- ليشتي'],
-        //     ['arabic' => 'توغو'],
-        //     ['arabic' => 'تونغا'],
-        //     ['arabic' => 'ترينيداد وتوباغو'],
-        //     ['arabic' => 'تونس'],
-        //     ['arabic' => 'تركيا'],
-        //     ['arabic' => 'تركمانستان'],
-        //     ['arabic' => 'توفالو'],
-        //     ['arabic' => 'أوغندا'],
-        //     ['arabic' => 'أوكرانيا'],
-        //     ['arabic' => 'الإمارات العربية المتحدة'],
-        //     ['arabic' => 'المملكة المتحدة لبريطانيا العظمى وأيرلندا الشمالية'],
-        //     ['arabic' => 'جمهورية تنزانيا المتحدة'],
-        //     ['arabic' => 'الولايات المتحدة الأمريكية'],
-        //     ['arabic' => 'أوروغواي'],
-        //     ['arabic' => 'أوزبكستان'],
-        //     ['arabic' => 'فانواتو'],
-        //     ['arabic' => 'فنزويلا (جمهورية - البوليفارية)'],
-        //     ['arabic' => 'فييت نام'],
-        //     ['arabic' => 'اليمن'],
-        //     ['arabic' => 'زامبيا'],
-        //     ['arabic' => 'زمبابوي'],
-        //     ['arabic' => 'دولة فلسطين '],
-
-        // ];
-
-
-
         $countries = [
-            ['name' => 'غير محدد'], // 1
-            ['name' => "أفغانستان"], // 2
-            ['name' => "ألبانيا"], // 3
-            ['name' => "الجزائر"], // 4
-            ['name' => "أندورا"], // 5
-            ['name' => "أنغولا"], // 6
-            ['name' => "أنتيغوا وبربودا"], // 7
-            ['name' => "الأرجنتين"], // 8
-            ['name' => "أرمينيا"], // 9
-            ['name' => "أستراليا"], // 10
-            ['name' => "النمسا"], // 11
-            ['name' => "أذربيجان"], // 12
-            ['name' => "جزر البهاما"], // 13
-            ['name' => "البحرين"], // 14
-            ['name' => "بنغلاديش"], // 15
-            ['name' => "بربادوس"], // 16
-            ['name' => "بيلاروس"], // 17
-            ['name' => "بلجيكا"], // 18
-            ['name' => "بليز"], // 19
-            ['name' => "بنن"], // 20
-            ['name' => "بوتان"], // 21
-            ['name' => "بوليفيا (دولة - المتعددة القوميات)"], // 22
-            ['name' => "البوسنة والهرسك"], // 23
-            ['name' => "بوتسوانا"], // 24
-            ['name' => "البرازيل"], // 25
-            ['name' => "بروني دار السلام"], // 26
-            ['name' => "بلغاريا"], // 27
-            ['name' => "بوركينا فاسو"], // 28
-            ['name' => "بوروندي"], // 29
-            ['name' => "كابو فيردي"], // 30
-            ['name' => "كمبوديا"], // 31
-            ['name' => "الكاميرون"], // 32
-            ['name' => "كندا"], // 33
-            ['name' => "جمهورية أفريقيا الوسطى"], // 34
-            ['name' => "تشاد"], // 35
-            ['name' => "شيلي"], // 36
-            ['name' => "الصين"], // 37
-            ['name' => "كولومبيا"], // 38
-            ['name' => "جزر القمر"], // 39
-            ['name' => "الكونغو"], // 40
-            ['name' => "كوستاريكا"], // 41
-            ['name' => "كوت ديفوار"], // 42
-            ['name' => "كرواتيا"], // 43
-            ['name' => "كوبا"], // 44
-            ['name' => "قبرص"], // 45
-            ['name' => "تشيكيا"], // 46
-            ['name' => "جمهورية كوريا الشعبية الديمقراطية"], // 47
-            ['name' => "جمهورية الكونغو الديمقراطية"], // 48
-            ['name' => "الدانمرك"], // 49
-            ['name' => "جيبوتي"], // 50
-            ['name' => "دومينيكا"], // 51
-            ['name' => "الجمهورية الدومينيكية"], // 52
-            ['name' => "إكوادور"], // 53
-            ['name' => "مصر"], // 54
-            ['name' => "السلفادور"], // 55
-            ['name' => "غينيا الاستوائية"], // 56
-            ['name' => "إريتريا"], // 57
-            ['name' => "إستونيا"], // 58
-            ['name' => "إسواتيني"], // 59
-            ['name' => "إثيوبيا"], // 60
-            ['name' => "فيجي"], // 61
-            ['name' => "فنلندا"], // 62
-            ['name' => "فرنسا"], // 63
-            ['name' => "غابون"], // 64
-            ['name' => "غامبيا"], // 65
-            ['name' => "جورجيا"], // 66
-            ['name' => "ألمانيا"], // 67
-            ['name' => "غانا"], // 68
-            ['name' => "اليونان"], // 69
-            ['name' => "غرينادا"], // 70
-            ['name' => "غواتيمالا"], // 71
-            ['name' => "غينيا"], // 72
-            ['name' => "غينيا - بيساو"], // 73
-            ['name' => "غيانا"], // 74
-            ['name' => "هايتي"], // 75
-            ['name' => "هندوراس"], // 76
-            ['name' => "هنغاريا"], // 77
-            ['name' => "آيسلندا"], // 78
-            ['name' => "الهند"], // 79
-            ['name' => "إندونيسيا"], // 80
-            ['name' => "إيران (جمهورية - الإسلامية)"], // 81
-            ['name' => "العراق"], // 82
-            ['name' => "أيرلندا"], // 83
-            ['name' => "إسرائيل"], // 84
-            ['name' => "إيطاليا"], // 85
-            ['name' => "جامايكا"], // 86
-            ['name' => "اليابان"], // 87
-            ['name' => "الأردن"], // 88
-            ['name' => "كازاخستان"], // 89
-            ['name' => "كينيا"], // 90
-            ['name' => "كيريباس"], // 91
-            ['name' => "الكويت"], // 92
-            ['name' => "قيرغيزستان"], // 93
-            ['name' => "جمهورية لاو الديمقراطية الشعبية"], // 94
-            ['name' => "لاتفيا"], // 95
-            ['name' => "لبنان"], // 96
-            ['name' => "ليسوتو"], // 97
-            ['name' => "ليبريا"], // 98
-            ['name' => "ليبيا"], // 99
-            ['name' => "ليختنشتاين"], // 100
-            ['name' => "ليتوانيا"], // 101
-            ['name' => "لكسمبرغ"], // 102
-            ['name' => "مدغشقر"], // 103
-            ['name' => "ملاوي"], // 104
-            ['name' => "ماليزيا"], // 105
-            ['name' => "ملديف"], // 106
-            ['name' => "مالي"], // 107
-            ['name' => "مالطة"], // 108
-            ['name' => "جزر مارشال"], // 109
-            ['name' => "موريتانيا"], // 110
-            ['name' => "موريشيوس"], // 111
-            ['name' => "المكسيك"], // 112
-            ['name' => "ميكرونيزيا (ولايات - الموحدة)"], // 113
-            ['name' => "موناكو"], // 114
-            ['name' => "منغوليا"], // 115
-            ['name' => "الجبل الأسود"], // 116
-            ['name' => "المغرب"], // 117
-            ['name' => "موزامبيق"], // 118
-            ['name' => "ميانمار"], // 119
-            ['name' => "ناميبيا"], // 120
-            ['name' => "ناورو"], // 121
-            ['name' => "نيبال"], // 122
-            ['name' => "هولندا"], // 123
-            ['name' => "نيوزيلندا"], // 124
-            ['name' => "نيكاراغوا"], // 125
-            ['name' => "النيجر"], // 126
-            ['name' => "نيجيريا"], // 127
-            ['name' => "مقدونيا الشمالية"], // 128
-            ['name' => "النرويج"], // 129
-            ['name' => "عمان"], // 130
-            ['name' => "باكستان"], // 131
-            ['name' => "بالاو"], // 132
-            ['name' => "بنما"], // 133
-            ['name' => "بابوا غينيا الجديدة"], // 134
-            ['name' => "باراغواي"], // 135
-            ['name' => "بيرو"], // 136
-            ['name' => "الفلبين"], // 137
-            ['name' => "بولندا"], // 138
-            ['name' => "البرتغال"], // 139
-            ['name' => "قطر"], // 140
-            ['name' => "جمهورية كوريا"], // 141
-            ['name' => "جمهورية مولدوفا"], // 142
-            ['name' => "رومانيا"], // 143
-            ['name' => "الاتحاد الروسي"], // 144
-            ['name' => "رواندا"], // 145
-            ['name' => "سانت كيتس ونيفس"], // 146
-            ['name' => "سانت لوسيا"], // 147
-            ['name' => "سانت فنسنت وجزر غرينادين"], // 148
-            ['name' => "ساموا"], // 149
-            ['name' => "سان مارينو"], // 150
-            ['name' => "سان تومي وبرينسيبي"], // 151
-            ['name' => "المملكة العربية السعودية"], // 152
-            ['name' => "السنغال"], // 153
-            ['name' => "صربيا"], // 154
-            ['name' => "سيشيل"], // 155
-            ['name' => "سيراليون"], // 156
-            ['name' => "سنغافورة"], // 157
-            ['name' => "سلوفاكيا"], // 158
-            ['name' => "سلوفينيا"], // 159
-            ['name' => "جزر سليمان"], // 160
-            ['name' => "الصومال"], // 161
-            ['name' => "جنوب أفريقيا"], // 162
-            ['name' => "جنوب السودان"], // 163
-            ['name' => "إسبانيا"], // 164
-            ['name' => "سري لانكا"], // 165
-            ['name' => "السودان"], // 166
-            ['name' => "سورينام"], // 167
-            ['name' => "السويد"], // 168
-            ['name' => "سويسرا"], // 169
-            ['name' => "الجمهورية العربية السورية"], // 170
-            ['name' => "طاجيكستان"], // 171
-            ['name' => "تايلند"], // 172
-            ['name' => "تيمور- ليشتي"], // 173
-            ['name' => "توغو"], // 174
-            ['name' => "تونغا"], // 175
-            ['name' => "ترينيداد وتوباغو"], // 176
-            ['name' => "تونس"], // 177
-            ['name' => "تركيا"], // 178
-            ['name' => "تركمانستان"], // 179
-            ['name' => "توفالو"], // 180
-            ['name' => "أوغندا"], // 181
-            ['name' => "أوكرانيا"], // 182
-            ['name' => "الإمارات العربية المتحدة"], // 183
-            ['name' => "المملكة المتحدة لبريطانيا العظمى وأيرلندا الشمالية"], // 184
-            ['name' => "جمهورية تنزانيا المتحدة"], // 185
-            ['name' => "الولايات المتحدة الأمريكية"], // 186
-            ['name' => "أوروغواي"], // 187
-            ['name' => "أوزبكستان"], // 188
-            ['name' => "فانواتو"], // 189
-            ['name' => "فنزويلا (جمهورية - البوليفارية)"], // 190
-            ['name' => "فييت نام"], // 191
-            ['name' => "اليمن"], // 192
-            ['name' => "زامبيا"], // 193
-            ['name' => "زمبابوي"], // 194
-            ['name' => "الكرسي الرسولي "], // 195
-            ['name' => "دولة فلسطين "], // 196
-            ['name' => "جزر كوك "], // 197
-            ['name' => "نيوي "], // 198
-
+            ['code' => 'AF', 'name' => 'Afghanistan', 'arabic' => 'أفغانستان',],
+            ['code' => 'AL', 'name' => 'Albania', 'arabic' => 'ألبانيا',],
+            ['code' => 'AX', 'name' => 'Aland Islands', 'arabic' => 'جزر آلاند',],
+            ['code' => 'DZ', 'name' => 'Algeria', 'arabic' => 'الجزائر',],
+            ['code' => 'AS', 'name' => 'American Samoa', 'arabic' => 'ساموا-الأمريكي',],
+            ['code' => 'AD', 'name' => 'Andorra', 'arabic' => 'أندورا',],
+            ['code' => 'AO', 'name' => 'Angola', 'arabic' => 'أنغولا',],
+            ['code' => 'AI', 'name' => 'Anguilla', 'arabic' => 'أنغويلا',],
+            ['code' => 'AQ', 'name' => 'Antarctica', 'arabic' => 'أنتاركتيكا',],
+            ['code' => 'AG', 'name' => 'Antigua and Barbuda', 'arabic' => 'أنتيغوا وبربودا'],
+            ['code' => 'AR', 'name' => 'Argentina', 'arabic' => 'الأرجنتين',],
+            ['code' => 'AM', 'name' => 'Armenia', 'arabic' => 'أرمينيا',],
+            ['code' => 'AW', 'name' => 'Aruba', 'arabic' => 'أروبه',],
+            ['code' => 'AU', 'name' => 'Australia', 'arabic' => 'أستراليا',],
+            ['code' => 'AT', 'name' => 'Austria', 'arabic' => 'النمسا',],
+            ['code' => 'AZ', 'name' => 'Azerbaijan', 'arabic' => 'أذربيجان',],
+            ['code' => 'BS', 'name' => 'Bahamas', 'arabic' => 'الباهاماس',],
+            ['code' => 'BH', 'name' => 'Bahrain', 'arabic' => 'البحرين',],
+            ['code' => 'BD', 'name' => 'Bangladesh', 'arabic' => 'بنغلاديش',],
+            ['code' => 'BB', 'name' => 'Barbados', 'arabic' => 'بربادوس',],
+            ['code' => 'BY', 'name' => 'Belarus', 'arabic' => 'روسيا البيضاء',],
+            ['code' => 'BE', 'name' => 'Belgium', 'arabic' => 'بلجيكا',],
+            ['code' => 'BZ', 'name' => 'Belize', 'arabic' => 'بيليز',],
+            ['code' => 'BJ', 'name' => 'Benin', 'arabic' => 'بنين',],
+            ['code' => 'BL', 'name' => 'Saint Barthelemy','سان بارتيلمي',],
+            ['code' => 'BM', 'name' => 'Bermuda', 'arabic' => 'جزر برمودا'],
+            ['code' => 'BT', 'name' => 'Bhutan', 'arabic' => 'بوتان'],
+            ['code' => 'BO', 'name' => 'Bolivia', 'arabic' => 'بوليفيا'],
+            ['code' => 'BA', 'name' => 'Bosnia and Herzegovina', 'arabic' => 'البوسنة و الهرسك',],
+            ['code' => 'BW', 'name' => 'Botswana', 'arabic' => 'بوتسوانا',],
+            ['code' => 'BV', 'name' => 'Bouvet Island', 'arabic' => 'جزيرة بوفيه',],
+            ['code' => 'BR', 'name' => 'Brazil', 'arabic' => 'البرازيل',],
+            ['code' => 'IO', 'name' => 'British Indian Ocean Territory', 'arabic' => 'إقليم المحيط الهندي البريطاني',],
+            ['code' => 'BN', 'name' => 'Brunei Darussalam', 'arabic' => 'بروني',],
+            ['code' => 'BG', 'name' => 'Bulgaria', 'arabic' => 'بلغاريا',],
+            ['code' => 'BF', 'name' => 'Burkina Faso', 'arabic' => 'بوركينا فاسو',],
+            ['code' => 'BI', 'name' => 'Burundi', 'arabic' => 'بوروندي',],
+            ['code' => 'KH', 'name' => 'Cambodia', 'arabic' => 'كمبوديا',],
+            ['code' => 'CM', 'name' => 'Cameroon', 'arabic' => 'كاميرون',],
+            ['code' => 'CA', 'name' => 'Canada', 'arabic' => 'كندا',],
+            ['code' => 'CV', 'name' => 'Cape Verde', 'arabic' => 'الرأس الأخضر',],
+            ['code' => 'KY', 'name' => 'Cayman Islands', 'arabic' => 'جزر كايمان',],
+            ['code' => 'CF', 'name' => 'Central African Republic', 'arabic' => 'جمهورية أفريقيا الوسطى',],
+            ['code' => 'TD', 'name' => 'Chad', 'arabic' => 'تشاد',],
+            ['code' => 'CL', 'name' => 'Chile', 'arabic' => 'شيلي',],
+            ['code' => 'CN', 'name' => 'China', 'arabic' => 'الصين',],
+            ['code' => 'CX', 'name' => 'Christmas Island', 'arabic' => 'جزيرة عيد الميلاد',],
+            ['code' => 'CC', 'name' => 'Cocos (Keeling) Islands', 'arabic' => 'جزر كوكوس',],
+            ['code' => 'CO', 'name' => 'Colombia', 'arabic' => 'كولومبيا',],
+            ['code' => 'KM', 'name' => 'Comoros', 'arabic' => 'جزر القمر',],
+            ['code' => 'CG', 'name' => 'Congo', 'arabic' => 'الكونغو',],
+            ['code' => 'CK', 'name' => 'Cook Islands', 'arabic' => 'جزر كوك',],
+            ['code' => 'CR', 'name' => 'Costa Rica', 'arabic' => 'كوستاريكا',],
+            ['code' => 'HR', 'name' => 'Croatia', 'arabic' => 'كرواتيا',],
+            ['code' => 'CU', 'name' => 'Cuba', 'arabic' => 'كوبا',],
+            ['code' => 'CY', 'name' => 'Cyprus', 'arabic' => 'قبرص',],
+            ['code' => 'CW', 'name' => 'Curaçao', 'arabic' => 'كوراساو',],
+            ['code' => 'CZ', 'name' => 'Czech Republic', 'arabic' => 'الجمهورية التشيكية',],
+            ['code' => 'DK', 'name' => 'Denmark', 'arabic' => 'الدانمارك',],
+            ['code' => 'DJ', 'name' => 'Djibouti', 'arabic' => 'جيبوتي',],
+            ['code' => 'DM', 'name' => 'Dominica', 'arabic' => 'دومينيكا',],
+            ['code' => 'DO', 'name' => 'Dominican Republic', 'arabic' =>'الجمهورية الدومينيكية'],
+            ['code' => 'EC', 'name' => 'Ecuador', 'arabic' => 'إكوادور',],
+            ['code' => 'EG', 'name' => 'Egypt', 'arabic' => 'مصر',],
+            ['code' => 'SV', 'name' => 'El Salvador', 'arabic' => 'إلسلفادور',],
+            ['code' => 'GQ', 'name' => 'Equatorial Guinea', 'arabic' => 'غينيا الاستوائي',],
+            ['code' => 'ER', 'name' => 'Eritrea', 'arabic' => 'إريتريا',],
+            ['code' => 'EE', 'name' => 'Estonia', 'arabic' => 'استونيا',],
+            ['code' => 'ET', 'name' => 'Ethiopia', 'arabic' => 'أثيوبيا',],
+            ['code' => 'FK', 'name' => 'Falkland Islands (Malvinas)', 'arabic' => 'جزر فوكلاند',],
+            ['code' => 'FO', 'name' => 'Faroe Islands', 'arabic' => 'جزر فارو',],
+            ['code' => 'FJ', 'name' => 'Fiji', 'arabic' => 'فيجي',],
+            ['code' => 'FI', 'name' => 'Finland', 'arabic' => 'فنلندا',],
+            ['code' => 'FR', 'name' => 'France', 'arabic' => 'فرنسا',],
+            ['code' => 'GF', 'name' => 'French Guiana', 'arabic' => 'غويانا الفرنسية',],
+            ['code' => 'PF', 'name' => 'French Polynesia', 'arabic' => 'بولينيزيا الفرنسية',],
+            ['code' => 'TF', 'name' => 'French Southern and Antarctic Lands', 'arabic' => 'أراض فرنسية جنوبية'],
+            ['code' => 'GA', 'name' => 'Gabon', 'arabic' => 'الغابون',],
+            ['code' => 'GM', 'name' => 'Gambia', 'arabic' => 'غامبيا',],
+            ['code' => 'GE', 'name' => 'Georgia', 'arabic' => 'جيورجيا',],
+            ['code' => 'DE', 'name' => 'Germany', 'arabic' => 'ألمانيا',],
+            ['code' => 'GH', 'name' => 'Ghana', 'arabic' => 'غانا',],
+            ['code' => 'GI', 'name' => 'Gibraltar', 'arabic' => 'جبل طارق',],
+            ['code' => 'GG', 'name' => 'Guernsey', 'arabic' => 'غيرنزي',],
+            ['code' => 'GR', 'name' => 'Greece', 'arabic' => 'اليونان',],
+            ['code' => 'GL', 'name' => 'Greenland', 'arabic' => 'جرينلاند',],
+            ['code' => 'GD', 'name' => 'Grenada', 'arabic' => 'غرينادا',],
+            ['code' => 'GP', 'name' => 'Guadeloupe', 'arabic' => 'جزر جوادلوب',],
+            ['code' => 'GU', 'name' => 'Guam', 'arabic' => 'جوام',],
+            ['code' => 'GT', 'name' => 'Guatemala', 'arabic' => 'غواتيمال',],
+            ['code' => 'GN', 'name' => 'Guinea', 'arabic' => 'غينيا',],
+            ['code' => 'GW', 'name' => 'Guinea-Bissau', 'arabic' => 'غينيا-بيساو',],
+            ['code' => 'GY', 'name' => 'Guyana', 'arabic' => 'غيانا',],
+            ['code' => 'HT', 'name' => 'Haiti', 'arabic' => 'هايتي',],
+            ['code' => 'HM', 'name' => 'Heard and Mc Donald Islands', 'arabic' => 'جزيرة هيرد وجزر ماكدونالد',],
+            ['code' => 'HN', 'name' => 'Honduras', 'arabic' => 'هندوراس',],
+            ['code' => 'HK', 'name' => 'Hong Kong', 'arabic' => 'هونغ كونغ',],
+            ['code' => 'HU', 'name' => 'Hungary', 'arabic' => 'المجر',],
+            ['code' => 'IS', 'name' => 'Iceland', 'arabic' => 'آيسلندا',],
+            ['code' => 'IN', 'name' => 'India', 'arabic' => 'الهند',],
+            ['code' => 'IM', 'name' => 'Isle of Man', 'arabic' => 'جزيرة مان',],
+            ['code' => 'ID', 'name' => 'Indonesia', 'arabic' => 'أندونيسيا',],
+            ['code' => 'IR', 'name' => 'Iran', 'arabic' => 'إيران',],
+            ['code' => 'IQ', 'name' => 'Iraq', 'arabic' => 'العراق',],
+            ['code' => 'IE', 'name' => 'Ireland', 'arabic' => 'إيرلندا',],
+             ['code' => 'IT', 'name' => 'Italy', 'arabic' => 'إيطاليا',],
+            ['code' => 'CI', 'name' => 'Ivory Coast', 'arabic' => 'ساحل العاج',],
+            ['code' => 'JE', 'name' => 'Jersey', 'arabic' => 'جيرزي',],
+            ['code' => 'JM', 'name' => 'Jamaica', 'arabic' => 'جمايكا',],
+            ['code' => 'JP', 'name' => 'Japan', 'arabic' => 'اليابان',],
+            ['code' => 'JO', 'name' => 'Jordan', 'arabic' => 'الأردن',],
+            ['code' => 'KZ', 'name' => 'Kazakhstan', 'arabic' => 'كازاخستان',],
+            ['code' => 'KE', 'name' => 'Kenya', 'arabic' => 'كينيا',],
+            ['code' => 'KI', 'name' => 'Kiribati', 'arabic' => 'كيريباتي',],
+            ['code' => 'KP', 'name' => 'Korea(North Korea)', 'arabic' => 'كوريا الشمالية',],
+            ['code' => 'KR', 'name' => 'Korea(South Korea)', 'arabic' => 'كوريا الجنوبية',],
+            ['code' => 'XK', 'name' => 'Kosovo', 'arabic' => 'كوسوفو',],
+            ['code' => 'KW', 'name' => 'Kuwait', 'arabic' => 'الكويت',],
+            ['code' => 'KG', 'name' => 'Kyrgyzstan', 'arabic' => 'قيرغيزستان',],
+            ['code' => 'LA', 'name' => 'Lao PDR', 'arabic' => 'لاوس',],
+            ['code' => 'LV', 'name' => 'Latvia', 'arabic' => 'لاتفيا',],
+            ['code' => 'LB', 'name' => 'Lebanon', 'arabic' => 'لبنان',],
+            ['code' => 'LS', 'name' => 'Lesotho', 'arabic' => 'ليسوتو',],
+            ['code' => 'LR', 'name' => 'Liberia', 'arabic' => 'ليبيريا',],
+            ['code' => 'LY', 'name' => 'Libya', 'arabic' => 'ليبيا',],
+            ['code' => 'LI', 'name' => 'Liechtenstein', 'arabic' => 'ليختنشتين',],
+            ['code' => 'LT', 'name' => 'Lithuania', 'arabic' => 'لتوانيا',],
+            ['code' => 'LU', 'name' => 'Luxembourg', 'arabic' => 'لوكسمبورغ',],
+            ['code' => 'LK', 'name' => 'Sri Lanka', 'arabic' => 'سريلانكا',],
+            ['code' => 'MO', 'name' => 'Macau', 'arabic' => 'ماكاو',],
+            ['code' => 'MK', 'name' => 'Macedonia', 'arabic' => 'مقدونيا',],
+            ['code' => 'MG', 'name' => 'Madagascar', 'arabic' => 'مدغشقر',],
+            ['code' => 'MW', 'name' => 'Malawi', 'arabic' => 'مالاوي',],
+            ['code' => 'MY', 'name' => 'Malaysia', 'arabic' => 'ماليزيا',],
+            ['code' => 'MV', 'name' => 'Maldives', 'arabic' => 'المالديف',],
+            ['code' => 'ML', 'name' => 'Mali', 'arabic' => 'مالي',],
+            ['code' => 'MT', 'name' => 'Malta', 'arabic' => 'مالطا',],
+            ['code' => 'MH', 'name' =>  'Marshall Islands', 'arabic' => 'جزر مارشال'],
+            ['code' => 'MQ', 'name' => 'Martinique', 'arabic' => 'مارتينيك',],
+            ['code' => 'MR', 'name' => 'Mauritania', 'arabic' => 'موريتانيا',],
+            ['code' => 'MU', 'name' => 'Mauritius', 'arabic' => 'موريشيوس',],
+            ['code' => 'YT', 'name' => 'Mayotte', 'arabic' => 'مايوت',],
+            ['code' => 'MX', 'name' => 'Mexico', 'arabic' => 'المكسيك',],
+            ['code' => 'FM', 'name' => 'Micronesia', 'arabic' => 'مايكرونيزيا',],
+            ['code' => 'MD', 'name' => 'Moldova', 'arabic' => 'مولدافيا',],
+            ['code' => 'MC', 'name' => 'Monaco', 'arabic' => 'موناكو',],
+            ['code' => 'MN', 'name' => 'Mongolia', 'arabic' => 'منغوليا',],
+            ['code' => 'ME', 'name' => 'Montenegro', 'arabic' => 'الجبل الأسود',],
+            ['code' => 'MS', 'name' => 'Montserrat', 'arabic' => 'مونتسيرات',],
+            ['code' => 'MA', 'name' => 'Morocco', 'arabic' => 'المغرب',],
+            ['code' => 'MZ', 'name' => 'Mozambique', 'arabic' => 'موزمبيق',],
+            ['code' => 'MM', 'name' => 'Myanmar', 'arabic' => 'ميانمار',],
+            ['code' => 'NA', 'name' => 'Namibia', 'arabic' => 'ناميبيا',],
+            ['code' => 'NR', 'name' => 'Nauru', 'arabic' => 'نورو',],
+            ['code' => 'NP', 'name' => 'Nepal', 'arabic' => 'نيبال',],
+            ['code' => 'NL', 'name' => 'Netherlands', 'arabic' => 'هولندا',],
+            ['code' => 'AN', 'name' => 'Netherlands Antilles', 'arabic' => 'جزر الأنتيل الهولندي',],
+            ['code' => 'NC', 'name' => 'New Caledonia', 'arabic' => 'كاليدونيا الجديدة',],
+            ['code' => 'NZ', 'name' => 'New Zealand', 'arabic' => 'نيوزيلندا',],
+            ['code' => 'NI', 'name' => 'Nicaragua', 'arabic' => 'نيكاراجوا',],
+            ['code' => 'NE', 'name' => 'Niger', 'arabic' => 'النيجر',],
+            ['code' => 'NG', 'name' => 'Nigeria', 'arabic' => 'نيجيريا',],
+            ['code' => 'NU', 'name' => 'Niue', 'arabic' => 'ني',],
+            ['code' => 'NF', 'name' => 'Norfolk Island', 'arabic' => 'جزيرة نورفولك',],
+            ['code' => 'MP', 'name' => 'Northern Mariana Islands', 'arabic' => 'جزر ماريانا الشمالية',],
+            ['code' => 'NO', 'name' => 'Norway', 'arabic' => 'النرويج',],
+            ['code' => 'OM', 'name' => 'Oman', 'arabic' => 'عمان',],
+            ['code' => 'PK', 'name' => 'Pakistan', 'arabic' => 'باكستان',],
+            ['code' => 'PW', 'name' => 'Palau', 'arabic' => 'بالاو',],
+            ['code' => 'PS', 'name' => 'Palestine', 'arabic' => 'فلسطين',],
+            ['code' => 'PA', 'name' => 'Panama', 'arabic' => 'بنما',],
+            ['code' => 'PG', 'name' => 'Papua New Guinea', 'arabic' => 'بابوا غينيا الجديدة',],
+            ['code' => 'PY', 'name' => 'Paraguay', 'arabic' => 'باراغواي',],
+            ['code' => 'PE', 'name' => 'Peru', 'arabic' => 'بيرو',],
+            ['code' => 'PH', 'name' => 'Philippines', 'arabic' => 'الفليبين',],
+            ['code' => 'PN', 'name' => 'Pitcairn', 'arabic' => 'بيتكيرن',],
+            ['code' => 'PL', 'name' => 'Poland', 'arabic' => 'بولندا',],
+            ['code' => 'PT', 'name' => 'Portugal', 'arabic' => 'البرتغال',],
+            ['code' => 'PR', 'name' => 'Puerto Rico','بورتو ريكو',],
+            ['code' => 'QA', 'name' => 'Qatar', 'arabic' => 'قطر',],
+            ['code' => 'RE', 'name' => 'Reunion Island', 'arabic' => 'ريونيون',],
+            ['code' => 'RO', 'name' => 'Romania', 'arabic' => 'رومانيا',],
+            ['code' => 'RU', 'name' => 'Russian', 'arabic' => 'روسيا',],
+            ['code' => 'RW', 'name' => 'Rwanda', 'arabic' => 'رواندا',],
+            ['code' => 'KN', 'name' => 'Saint Kitts and Nevis', 'arabic' => 'سانت كيتس ونيفس,',],
+            ['code' => 'MF', 'name' => 'Saint Martin (French part)', 'arabic' => 'ساينت مارتن فرنسي',],
+            ['code' => 'SX', 'name' => 'Sint Maarten (Dutch part)', 'arabic' => 'ساينت مارتن هولندي',],
+            ['code' => 'LC', 'name' => 'Saint Pierre and Miquelon', 'arabic' => 'سان بيير وميكلون',],
+            ['code' => 'VC', 'name' => 'Saint Vincent and the Grenadines', 'arabic' => 'سانت فنسنت وجزر غرينادين',],
+            ['code' => 'WS', 'name' => 'Samoa', 'arabic' => 'ساموا',],
+            ['code' => 'SM', 'name' => 'San Marino', 'arabic' => 'سان مارينو',],
+            ['code' => 'ST', 'name' => 'Sao Tome and Principe', 'arabic' => 'ساو تومي وبرينسيبي',],
+            ['code' => 'SA', 'name' => 'Saudi Arabia', 'arabic' => 'المملكة العربية السعودية',],
+            ['code' => 'SN', 'name' => 'Senegal', 'arabic' => 'السنغال',],
+            ['code' => 'RS', 'name' => 'Serbia', 'arabic' => 'صربيا',],
+            ['code' => 'SC', 'name' => 'Seychelles', 'arabic' => 'سيشيل',],
+            ['code' => 'SL', 'name' => 'Sierra Leone', 'arabic' => 'سيراليون',],
+            ['code' => 'SG', 'name' => 'Singapore', 'arabic' => 'سنغافورة',],
+            ['code' => 'SK', 'name' => 'Slovakia', 'arabic' => 'سلوفاكيا',],
+            ['code' => 'SI', 'name' => 'Slovenia', 'arabic' => 'سلوفينيا',],
+            ['code' => 'SB', 'name' => 'Solomon Islands', 'arabic' => 'جزر سليمان',],
+            ['code' => 'SO', 'name' => 'Somalia', 'arabic' => 'الصومال',],
+            ['code' => 'ZA', 'name' => 'South Africa', 'arabic' => 'جنوب أفريقيا',],
+            ['code' => 'GS', 'name' => 'South Georgia and the South Sandwich', 'arabic' => 'المنطقة القطبية الجنوبية',],
+            ['code' => 'SS', 'name' => 'South Sudan', 'arabic' => 'السودان الجنوبي',],
+            ['code' => 'ES', 'name' => 'Spain', 'arabic' => 'إسبانيا',],
+            ['code' => 'SH', 'name' => 'Saint Helena', 'arabic' => 'سانت هيلانة',],
+            ['code' => 'SD', 'name' => 'Sudan', 'arabic' => 'السودان',],
+            ['code' => 'SR', 'name' => 'Suriname', 'arabic' => 'سورينام',],
+            ['code' => 'SJ', 'name' => 'Svalbard and Jan Mayen', 'arabic' => 'سفالبارد ويان ماين',],
+            ['code' => 'SZ', 'name' => 'Swaziland', 'arabic' => 'سوازيلند',],
+            ['code' => 'SE', 'name' => 'Sweden', 'arabic' => 'السويد',],
+            ['code' => 'CH', 'name' => 'Switzerland', 'arabic' => 'سويسرا',],
+            ['code' => 'SY', 'name' => 'Syria', 'arabic' => 'سوريا',],
+            ['code' => 'TW', 'name' => 'Taiwan', 'arabic' => 'تايوان',],
+            ['code' => 'TJ', 'name' => 'Tajikistan', 'arabic' => 'طاجيكستان',],
+            ['code' => 'TZ', 'name' => 'Tanzania', 'arabic' => 'تنزانيا',],
+            ['code' => 'TH', 'name' => 'Thailand', 'arabic' => 'تايلندا',],
+            ['code' => 'TL', 'name' => 'Timor-Leste', 'arabic' => 'تيمور الشرقية',],
+            ['code' => 'TG', 'name' => 'Togo', 'arabic' => 'توغو',],
+            ['code' => 'TK', 'name' => 'Tokelau', 'arabic' => 'توكيلاو',],
+            ['code' => 'TO', 'name' => 'Tonga', 'arabic' => 'تونغا',],
+            ['code' => 'TT', 'name' => 'Trinidad and Tobago', 'arabic' => 'ترينيداد وتوباغو',],
+            ['code' => 'TN', 'name' => 'Tunisia', 'arabic' => 'تونس',],
+            ['code' => 'TR', 'name' => 'Turkey', 'arabic' => 'تركيا',],
+            ['code' => 'TM', 'name' => 'Turkmenistan', 'arabic' => 'تركمانستان',],
+            ['code' => 'TC', 'name' => 'Turks and Caicos Islands', 'arabic' => 'جزر توركس وكايكوس',],
+            ['code' => 'TV', 'name' => 'Tuvalu', 'arabic' => 'توفالو',],
+            ['code' => 'UG', 'name' => 'Uganda', 'arabic' => 'أوغندا',],
+            ['code' => 'UA', 'name' => 'Ukraine', 'arabic' => 'أوكرانيا',],
+            ['code' => 'AE', 'name' => 'United Arab Emirates', 'arabic' => 'الإمارات العربية المتحدة',],
+            ['code' => 'GB', 'name' => 'United Kingdom', 'arabic' => 'المملكة المتحدة',],
+            ['code' => 'US', 'name' => 'United States', 'arabic' => 'الولايات المتحدة',],
+            ['code' => 'UM', 'name' => 'US Minor Outlying Islands', 'arabic' => 'قائمة الولايات والمناطق الأمريكية',],
+            ['code' => 'UY', 'name' => 'Uruguay', 'arabic' => 'أورغواي',],
+            ['code' => 'UZ', 'name' => 'Uzbekistan', 'arabic' => 'أوزباكستان',],
+            ['code' => 'VU', 'name' => 'Vanuatu', 'arabic' => 'فانواتو',],
+            ['code' => 'VE', 'name' => 'Venezuela', 'arabic' => 'فنزويلا',],
+            ['code' => 'VN', 'name' => 'Vietnam', 'arabic' => 'فيتنام',],
+            ['code' => 'VI', 'name' => 'Virgin Islands (U.S.)', 'arabic' => 'الجزر العذراء الأمريكي',],
+            ['code' => 'VA', 'name' => 'Vatican City', 'arabic' => 'فنزويلا',],
+            ['code' => 'WF', 'name' => 'Wallis and Futuna Islands', 'arabic' => 'والس وفوتونا',],
+            ['code' => 'EH', 'name' => 'Western Sahara', 'arabic' => 'الصحراء الغربية',],
+            ['code' => 'YE', 'name' => 'Yemen', 'arabic' => 'اليمن',],
+            ['code' => 'ZM', 'name' => 'Zambia', 'arabic' => 'زامبيا',],
+            ['code' => 'ZW', 'name' => 'Zimbabwe', 'arabic' => 'زمبابوي',],
         ];
 
         Country::insert($countries);
-
     }
 }
